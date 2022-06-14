@@ -1,0 +1,14 @@
+{
+    "name": "AmelieBLV",
+    "short_name": "AmelieBLV",
+    "icons": [
+        {
+            "src": "android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#98b4b1",
+    "background_color": "#98b4b1",
+    "display": "standalone"
+}
