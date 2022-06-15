@@ -16,9 +16,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
+    <script src="./script/flickity.pkgd.min.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -59,27 +59,23 @@
                   Portfolio
                   </h1>
             </div>
-            <div class="portfolio_wrapper">
-                <ul class="portfolio_list">
-                    <li class="portfolio_item">
-                        <img src="../img/muzikasskola.png" alt="website1">
-                    </li>
-                    <li class="portfolio_item">
-                        <img src="../img/muzikasskola.png" alt="website1">
-                    </li>
-                </ul>
-            </div>
 
-           <!-- <div class="portfolio_wrapper">
-                <div class="portfolio_card" id="card1">
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell">
                     <img src="../img/muzikasskola.png" alt="website1">
-               </div>
-               <div class="portfolio_card" id="card2">
-                 <img src="../img/muzikasskola.png" alt="website2">
-               </div>
-            </div> -->
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/muzikasskola.png" alt="website2">
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/muzikasskola.png" alt="website3">
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/muzikasskola.png" alt="website4">
+                </div>
+            </div>
         </section>
-
     </main> 
 
 </body>

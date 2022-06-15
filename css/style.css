@@ -406,6 +406,7 @@ html{
 .wrapper{
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 body{
     font-family: 'Neue Machina';
@@ -426,6 +427,7 @@ body{
 
 .header_wrapper
 {
+    max-width: 100%;
     display:flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -511,7 +513,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 15px;
     gap: 30px;
 
     position: absolute;
@@ -537,7 +539,7 @@ p{
     text-align: center;
 }
 .intro_title{
-    width: 794px;
+    width: 800px;
     height: 102px;
     padding-top: 270px;
     margin-left: auto;
@@ -547,11 +549,11 @@ p{
 .intro_list{
     width: 466px;
     height: 31px;
-    margin-left: auto;
-    margin-right: auto;    
+    margin:0 auto;   
     display:flex;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .intro_item{
@@ -591,35 +593,19 @@ p{
     margin-right: auto;
 }
 
-.portfolio_wrapper{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 1600px;
-    height: 357px;
-    margin-left: auto;
-    margin-right: auto;
-}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-.portfolio_list{
-    float: left;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 1600px;
-    height: 353px;
-    top: 300px;
-    margin-left:  auto;
-    margin-right: auto;
-}
-.portfolio_item{
+  .gallery-cell {
     width: 601px;
     height: 353px;
+    margin-right: 10px;
     border-radius: 50px;
-    margin-right:10px;
-}
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
 
 /*Portfolio end*/
 /*About me start*/
@@ -632,11 +618,12 @@ p{
 }
 
 .about_wrapper{
+    padding: 0 15px;
     display:flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     height: 357px;
     margin-left: auto;
     margin-right: auto;
@@ -645,8 +632,8 @@ p{
 } 
 
 .about_text{
-    width: 813px;
-    height: 152px;
+    max-width: 813px;
+    max-height: 152px;
     left: 587px;
     top: 374px;
 }
@@ -727,3 +714,23 @@ p{
 }
 /*Contact end*/
 /*Main end*/
+
+/*Media start*/
+@media screen and (max-width:1000px){
+    .socials{
+        position:relative;
+        width:100%;
+        margin-bottom:0px
+    }
+    .socials_list{
+        position:absolute;
+        flex-direction:row;
+        align-items:center;
+        padding: 15px;
+        gap: 30px;
+        margin: 0 auto;
+        left: 0px;
+    }
+
+}
+/*Media end*/
